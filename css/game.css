@@ -1,60 +1,4 @@
-.game{
-    width: 600px;
-    height: 200px;
-    border-bottom: 1px solid #000;
-    margin: auto;
-}
 
-#cat{
-    width: 50px;
-    height: 50px;
-    background-image: url(../img/cat.png);
-    background-size: 50px 50px;
-    position: relative;
-    top: 150px;
-}
-
-#cactus{
-    width: 20px;
-    height: 40px;
-    background-image: url(../img/cactus.png);
-    background-size: 20px 40px;
-    position: relative;
-    top: 110px;
-    left: 580px;
-    animation: cactusMov 1s infinite linear;
-}
-@keyframes cactusMov {
-    0%{
-        left: 580px;
-    }
-    100%{
-        left: -20px;
-    }
-    
-}
-
-.jump{
-    animation: jump 0.3s linear;
-}
-
-@keyframes jump {
-    0%{
-        top: 150px;
-    }
-    30%{
-        top: 130px;
-    }
-    50%{
-        top: 80px;
-    }
-    80%{
-        top: 130px;
-    }
-    100%{
-        top: 150px;
-    }
-}
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700;800&display=swap');
@@ -121,9 +65,17 @@ a{
 }
 
 h1{
-    font-family: var(--body-font);
-    font-size: var(--h1-font-size);
-    
+    font-family: var(--font-cursive);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+}
+
+h2{
+    font-family: var(--font-cursive);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+    line-height: var(--);
+    color: var(--first-color);
 }
 .btn {
     background-color: #75492b;
@@ -145,4 +97,166 @@ padding: 10px 20px;
 outline: none;
 transition: all 400ms ease;
 width: 240px;
+}
+
+
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700;800&display=swap');
+/*---------------VARIABLES CSS-------------------*/
+:root {
+    --header-height: 6.25rem;
+
+    /*---------------COLLORS -------------------*/
+    --main-color: #F2E3DB;
+    --first-color: #395144;
+    --second-color: #C1D0B5;
+    --white-color: #ffffff;
+    --black-color: #151515;
+
+    /*---------------FONT  AND TYPOGRAPHY-------------------*/
+    --font-cursive: 'Great Vibes', cursive;
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+
+    /*---------------FONT WEIGHT-------------------*/
+    --font-light: 300;
+    --font-medium: 400;
+    --font-semi-bold: 700;
+    --font-bold: 800;
+
+    /*---------------MARGINS-------------------*/
+    --mb-05: 0.5rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*---------------Z INDEXS-------------------*/
+    --Z-fixed: 100;
+    --z-tooltip: 10;
+    --z_negative: -1;
+}
+/* base */
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    padding: calc(var(--header-height) + 20px) 0;
+}
+.grid{
+    display: grid;
+    gap: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section__title{
+    margin: 0 auto;
+    text-align: center;
+}
+.section__title h1{
+    font-family: var(--font-cursive);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+    line-height: var(--big-font-size);
+    color: #75492b;
+}
+.section__title span{
+    font-weight: var(--font-light);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-font-size);
+    color: var(--first-color);
+}
+
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#cat{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/cat.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus{
+    width: 20px;
+    height: 40px;
+    background-image: url(../img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 1s infinite linear;
+}
+@keyframes cactusMov {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+    
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: 150px;
+    }
 }
