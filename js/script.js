@@ -1,11 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => { /*запускается когда первоначальный HTML документ будет полностью загружен и разобран, без ожидания полной загрузки таблиц стилей, изображений и фреймов*/
-  const hero = document.querySelector('.hero'); /* возвращает первый элемент*/
+$(document).ready(function() {
+  const hero = document.querySelector('.hero');
   const header = document.querySelector('.header');
   const scrollItems = document.querySelectorAll('.scroll-item');
 
   const scrollAnimation = () => {
     let windowCenter = (window.innerHeight / 2) + window.scrollY;
-    
 
     scrollItems.forEach(el => {
       let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => { /*запускается �
 
     if (scrollTop >= heroCenter) {
       header.classList.add('fixed')
-      hero.style.marginTop = '${header.offsetHeight}px';
+      hero.style.marginTop = `${header.offsetHeight}px`;
     } else {
       header.classList.remove('fixed')
       hero.style.marginTop = '0px';
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => { /*запускается �
 
   headerFixed();
   scrollAnimation();
-  window.addEventListener('scroll', () => {
+  $(window).scroll(function() {
     headerFixed();
     scrollAnimation();
   });
