@@ -68,12 +68,32 @@
                     
                     <div class="hero__img">
                         <div class="col-6 col-md-6">
-                        <img src="../img/homepage1.png" alt="">
+                        <img src="../img/poodle.png" alt="">
                     </div>
                 </div>
                     <div class="hero__content">
                         <div class="col-6 col-md-6">
-                        <h1>The best choice<br><span>for your pet</span></h1>
+                            <div>
+                                <h2></h2>
+                                <script>
+                                  
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var textElement = document.querySelector("h2");
+                                var text = "The best choice for your pet";
+                                var speed = 100; 
+                              
+                                function typeWriter() {
+                                  if (text.length > 0) {
+                                    textElement.innerHTML += text.charAt(0);
+                                    text = text.slice(1);
+                                    setTimeout(typeWriter, speed);
+                                  }
+                                }
+                            
+                                typeWriter();
+                            });
+                                </script>
+                            </div>
                         <p> Grooming your pet is not just about keeping them clean and healthy, it's about showing them the same love and care they give you every day</p>
                     </div>
                     </div>
@@ -118,6 +138,14 @@
         
         <footer class="footer" id="contact">
 
+            
+            <section class="location">
+                <div class="yandex-map"></div>
+    
+                <iframe src="https://yandex.kz/maps/-/CCU8V8upSC" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+        </section>
+
             <div>
 
 
@@ -140,7 +168,7 @@
         </div>
 
        
-        <button onclick="document.getElementById('demo').innerHTML = Date()">The time to registration</button>
+        
     
 
             <div class="footer__list section container grid">
@@ -212,12 +240,6 @@
     
             </div>
     
-            <section class="location">
-                <div class="yandex-map"></div>
-    
-                <iframe src="https://yandex.kz/maps/-/CCU8V8upSC" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
-    
-        </section>
 
         
         </footer>
@@ -226,19 +248,7 @@
         
             
 
-            <section class="contacts">
-                <div class="containerD">
-                    <h2 class="title">Our klients</h2>
-                    <ul class="services__list">
-                        <li class="services__item scroll-item">  <img src="../img/first.jpg" alt="Alt"> </li>
-                        
-                        <li class="services__item scroll-item">  <img src="../img/second.jpg" alt="Alt"> </li>
-                        <li class="services__item scroll-item">  <img src="../img/third.jpg" alt="Alt"> </li>
-                        <li class="services__item scroll-item">  <img src="../img/fourth.jpg" alt="Alt"> </li>
-                    </ul>
-                    
-                </div>
-            </section>
+       
 
         </main>
 
