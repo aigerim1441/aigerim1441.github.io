@@ -75,7 +75,25 @@ button {
     }
   </script>
 <body>
-  <h1>Random Citation of the Day</h1>
+   <h1>R</h1>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var textElement = document.querySelector("h1");
+    var text = "andom citation of the day";
+    var speed = 100; 
+  
+    function typeWriter() {
+      if (text.length > 0) {
+        textElement.innerHTML += text.charAt(0);
+        text = text.slice(1);
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+});
+    
+  </script>
   <button onclick="generateCitation()"><i class="fas fa-paw"></i></button>
   <p id="citation"></p>
   <form action="index.html" ><button class="btn">Main page</button></form>
