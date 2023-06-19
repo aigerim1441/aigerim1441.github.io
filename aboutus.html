@@ -5,131 +5,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-
-
-    <script src="../libs/gsap.min.js" defer></script>
-    <script src="../libs/ScrollTrigger.min.js" defer></script>
-    <script src="../libs/ScrollSmoother.min.js" defer></script>
-
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/js.js" defer></script>
+    <style>
+        /* Общие стили для всех устройств */
+        .heroM {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        
+        .main-titleM {
+            font-size: 24px;
+        }
+        
+        .gallery__itemM {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .text-block__hM {
+            font-size: 18px;
+        }
+        
+        .text-block__pM {
+            font-size: 14px;
+        }
+        
+        /* Медиа-запросы для разных размеров экрана */
+        
+        /* Для устройств шириной меньше или равной 480px */
+        @media (max-width: 480px) {
+            .heroM {
+                max-width: 200px;
+            }
+            
+            .main-titleM {
+                font-size: 18px;
+            }
+            
+            .gallery__itemM {
+                max-width: 150px;
+            }
+            
+            .text-block__hM {
+                font-size: 16px;
+            }
+            
+            .text-block__pM {
+                font-size: 12px;
+            }
+        }
+        
+        /* Для устройств шириной между 481px и 768px */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .heroM {
+                max-width: 250px;
+            }
+            
+            .main-titleM {
+                font-size: 20px;
+            }
+            
+            .gallery__itemM {
+                max-width: 175px;
+            }
+            
+            .text-block__hM {
+                font-size: 16px;
+            }
+            
+            .text-block__pM {
+                font-size: 12px;
+            }
+        }
+        
+        /* Для устройств шириной больше 768px */
+        @media (min-width: 769px) {
+            /* Ваши стили для больших экранов */
+        }
+    </style>
 </head>
 <body class="bodyM">
-
-
-    
- <div class="wrapper">
-    <div class="content" id="about">
-
-
-        
-        <header class="hero-sectionM">
-            
-            <img data-speed=".6" class="heroM" src="../img/poodle.png" alt="Alt">
-            <div class="container">
-                
-                <div data-speed=".75" class="main-headerM">
-                    <a href="index.html">
-                <h1 class="main-titleM"> About us</h1>
-            </a>
+    <div class="wrapper">
+        <div class="content" id="about">
+            <header class="hero-sectionM">
+                <img data-speed=".6" class="heroM" src="../img/poodle.png" alt="Alt">
+                <div class="container">
+                    <div data-speed=".75" class="main-headerM">
+                        <a href="index.html">
+                            <h1 class="main-titleM">About us</h1>
+                        </a>
+                    </div>
                 </div>
-            </div>
-                </header>
+            </header>
             <div class="portfolio">
                 <div class="containerM">
                     <main class="galleryM">
-            <div data-speed=".9" class="gallery__leftM">
-                <a href="index.html"> <img class="gallery__itemM" src="../img/me.jpg" alt="Alt"> </a> 
-                 <a href="index.html"><img class="gallery__itemM" src="../img/aigerim.jpg" alt="Alt"></a> 
-                 <a href="index.html"><img class="gallery__itemM" src="../img/dana.jpg" alt="Alt"></a> 
-                <a href="index.html"><img class="gallery__itemM" src="../img/diana.jpg" alt="Alt"></a>
-                    
-            </div>
-            
-            
-            <div data-speed="1.1" class="gallery__rightM">
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM">Sergalieva Aisara</h3>
-                    <p class="text-block__pM">About Us, Gallery and Game</p>
-                 </div>
-            
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM">Abdikhamidova Aigerim</h3>
-                    <p class="text-block__pM">Services, Registration and Generation of Random Citation</p>
-                </div>
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM">Amangeldina Dana</h3>
-                    <p class="text-block__pM">Feedback and Q & A</p>
-                </div>
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                 <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM"> </h3>
-                    <p class="text-block__pM">  </p>
-                 </div>
-
-                <div class="text-blockM gallery__itemM" >
-                    <h3 class="text-block__hM">Arsenyeva Diana</h3>
-                    <p class="text-block__pM">Main page and Contacts</p>
-                </div>
-                
-            
-            
-            </div>
+                        <div data-speed=".9" class="gallery__leftM">
+                            <a href="index.html"> <img class="gallery__itemM" src="../img/me.jpg" alt="Alt"> </a> 
+                            <a href="index.html"><img class="gallery__itemM" src="../img/aigerim.jpg" alt="Alt"></a> 
+                            <a href="index.html"><img class="gallery__itemM" src="../img/dana.jpg" alt="Alt"></a> 
+                            <a href="index.html"><img class="gallery__itemM" src="../img/diana.jpg" alt="Alt"></a>
+                        </div>
+                        <div data-speed="1.1" class="gallery__rightM">
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM">Sergalieva Aisara</h3>
+                                <p class="text-block__pM">About Us, Gallery and Game</p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM">Abdikhamidova Aigerim</h3>
+                                <p class="text-block__pM">Services, Registration and Generation of Random Citation</p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM">Amangeldina Dana</h3>
+                                <p class="text-block__pM">Feedback and Q & A</p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM"></h3>
+                                <p class="text-block__pM"></p>
+                            </div>
+                            <div class="text-blockM gallery__itemM">
+                                <h3 class="text-block__hM">Arsenyeva Diana</h3>
+                                <p class="text-block__pM">Main page and Contacts</p>
+                            </div>
+                        </div>
                     </main>
                 </div>
             </div>
-                
+        </div>
     </div>
- </div>
- 
 </body>
 </html>
+
